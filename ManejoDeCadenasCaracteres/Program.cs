@@ -38,3 +38,24 @@ foreach (char c in sb.ToString())
     Console.Write(c);
 }
 
+int nivel = 9000;
+// Con dos $$, las llaves simples {} se imprimen literal. 
+// Solo {{ }} inserta la variable.
+string json = $$"""
+    {
+        "mensaje": "El nivel es {esto no es variable}",
+        "valor": {{nivel}}
+    }
+    """;
+
+
+var json2 = "prueba"u8;
+
+
+
+
+
+foreach (char c in json)
+{
+    Console.Write(c);
+}
